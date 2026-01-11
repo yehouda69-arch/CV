@@ -9,134 +9,101 @@
      style="width:140px; border-radius:50%; margin-top:20px;">
 
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      direction: rtl;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 32px;
-      color: #1f3a5f;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 22px;
-      border-bottom: 2px solid #1f3a5f;
-      padding-bottom: 6px;
-      color: #1f3a5f;
-    }
-
-    .contact {
-      margin-top: 10px;
-      font-size: 15px;
-    }
-
-    .contact a {
-      color: #1f3a5f;
-      text-decoration: none;
-    }
-
-    .job {
-      margin-top: 20px;
-    }
-
-    .job-title {
-      font-weight: bold;
-      font-size: 17px;
-    }
-
-    .job-meta {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    ul {
-      margin-top: 8px;
-      padding-right: 20px;
-    }
-
-    li {
-      margin-bottom: 6px;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 10px;
-        padding: 20px;
-      }
-    }
-  </style>
-</head>
-
-<body>
+   <body>
   <div class="container">
 
-    <h1>יהודה לוי</h1>
-    <div class="contact">
-      📧 <a href="mailto:yehouda69@gmail.com">yehouda69@gmail.com</a> |
-      📞 054-9950634
+    <!-- HEADER -->
+    <div style="display:flex; align-items:center; gap:25px; flex-wrap:wrap;">
+      <img src="images/profile.jpg"
+           alt="יהודה לוי"
+           style="width:140px; height:140px; border-radius:50%; object-fit:cover;">
+
+      <div>
+        <h1>יהודה לוי</h1>
+        <div class="contact">
+          📍 אשדוד |
+          📞 054-9950634 |
+          📧 <a href="mailto:yehouda69@gmail.com">yehouda69@gmail.com</a>
+        </div>
+      </div>
     </div>
 
-    <h2>ניסיון מקצועי</h2>
+    <h2>ניסיון תעסוקתי</h2>
 
+    <!-- HCT -->
     <div class="job">
-      <div class="job-title">Senior Customer Support Engineer – Tier 2</div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/hct.png" alt="HCT" style="height:40px;">
+        <div class="job-title">מומחה יישומים – נמל דרום אשדוד (HCT)</div>
+      </div>
+      <div class="job-meta">2022–2025</div>
+      <ul>
+        <li>תמיכה בממשקי מערכות הארגון: תס"ק, ים, מכס, אפקון, קמקו.</li>
+        <li>עבודה שוטפת בחדר בקרה.</li>
+      </ul>
+    </div>
+
+    <!-- ARDAN -->
+    <div class="job">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/ardan.png" alt="ארדן קונטרול טק" style="height:40px;">
+        <div class="job-title">אינטגרטור / שירות – ארדן קונטרול טק</div>
+      </div>
+      <div class="job-meta">2021–2022</div>
+      <ul>
+        <li>קינפוג מצלמות (Milestone), בקרי כניסה.</li>
+        <li>הקמת חוות סולריות: כיול מצלמות, סוויצ׳ים, סיבים.</li>
+        <li>מיפוי רשת בית חולים אסותא אשדוד.</li>
+      </ul>
+    </div>
+
+    <!-- MAGALCOM -->
+    <div class="job">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/magalcom.png" alt="מגלקום" style="height:40px;">
+        <div class="job-title">טכנאי הפעלות – מגלקום</div>
+      </div>
+      <div class="job-meta">2019–2020</div>
+      <ul>
+        <li>קינפוג מערכות כריזה.</li>
+        <li>מערכות קריאת אחות – פרויקט משען גבעתיים.</li>
+        <li>אינטרקום – אסף הרופא, פורייה, עמק.</li>
+      </ul>
+    </div>
+
+    <!-- NICE -->
+    <div class="job">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/nice.png" alt="NICE Systems" style="height:40px;">
+        <div class="job-title">Senior Customer Support Engineer – Tier 2</div>
+      </div>
       <div class="job-meta">NICE Systems | 2008–2018</div>
       <ul>
-        <li>תמיכה טכנית ללקוחות אנטרפרייז בינלאומיים (Tier 2 / Tier 3).</li>
-        <li>עבודה מול לקוחות כגון HSBC, JPMorgan, Iberdrola, Société Générale.</li>
-        <li>ניתוח תקלות מורכבות, RCA, עבודה מול צוותי R&D.</li>
-        <li>עבודה עם SQL, לוגים, מערכות מורכבות וסביבות Production.</li>
+        <li>תמיכה Tier 2 / Tier 3 ללקוחות גלובליים.</li>
+        <li>לקוחות: HSBC, JPMorgan, Iberdrola, Société Générale.</li>
+        <li>ניתוח לוגים, RCA, עבודה מול R&D.</li>
+        <li>Windows, SQL, חיבור מרחוק.</li>
       </ul>
     </div>
 
+    <!-- BEZEQ -->
     <div class="job">
-      <div class="job-title">תפקידים נוספים בתמיכה ואופרציה</div>
-      <div class="job-meta">2019–2025</div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/bezeq.png" alt="בזק בינלאומי" style="height:40px;">
+        <div class="job-title">תמיכה טכנית – בזק בינלאומי</div>
+      </div>
+      <div class="job-meta">2004–2005</div>
       <ul>
-        <li>תמיכה אפליקטיבית ופתרון תקלות משתמשים.</li>
-        <li>עבודה עם Excel, תהליכים, מערכות מידע.</li>
-        <li>אוטומציות וייעול תהליכים.</li>
+        <li>הגדרות רשת, כרטיסי רשת, דואר, דפדפנים.</li>
       </ul>
     </div>
-
-    <h2>השכלה והכשרות</h2>
-    <ul>
-      <li>קורס בינה מלאכותית – letsai.co.il</li>
-      <li>למידה עצמאית בתחומי אוטומציה, AI ו-IT</li>
-    </ul>
-<img src="images/nice.png"
-     alt="NICE Systems"
-     style="height:40px; margin:10px 0;">
-
-    <h2>כישורים</h2>
-    <ul>
-      <li>תמיכה אפליקטיבית ופתרון תקלות</li>
-      <li>SQL, ניתוח לוגים, RCA</li>
-      <li>Excel מתקדם</li>
-      <li>עבודה עם מערכות מורכבות</li>
-      <li>למידה מהירה וחשיבה מערכתית</li>
-    </ul>
 
   </div>
 </body>
+
+
   <!-- force redeploy -->
 </html>
+
 
 
