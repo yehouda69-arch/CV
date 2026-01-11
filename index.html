@@ -7,10 +7,9 @@
 
   <style>
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #f5f7fa;
-      margin: 0;
-      padding: 0;
       color: #222;
       direction: rtl;
     }
@@ -18,9 +17,9 @@
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background: #ffffff;
+      background: #fff;
       padding: 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     h1 {
@@ -47,8 +46,33 @@
       text-decoration: none;
     }
 
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     .job {
       margin-top: 25px;
+    }
+
+    .job-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .job-header img {
+      height: 40px;
     }
 
     .job-title {
@@ -72,13 +96,6 @@
       line-height: 1.6;
     }
 
-    .job-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
     @media (max-width: 600px) {
       .container {
         margin: 10px;
@@ -92,11 +109,8 @@
   <div class="container">
 
     <!-- HEADER -->
-    <div class="job-header" style="gap:25px;">
-      <img src="images/profile.jpg"
-           alt="יהודה לוי"
-           style="width:140px; height:140px; border-radius:50%; object-fit:cover;">
-
+    <div class="header">
+      <img src="images/profile.jpg" alt="יהודה לוי" class="profile">
       <div>
         <h1>יהודה לוי</h1>
         <div class="contact">
@@ -111,53 +125,43 @@
 
     <div class="job">
       <div class="job-header">
-        <img src="images/hct.png" alt="HCT" style="height:40px;">
+        <img src="images/hct.png" alt="HCT">
         <div class="job-title">מומחה יישומים – נמל דרום אשדוד (HCT)</div>
       </div>
       <div class="job-meta">2022–2025</div>
       <ul>
-        <li>תמיכה בממשקי מערכות הארגון: תס"ק, ים, מכס, אפקון, קמקו.</li>
-        <li>עבודה שוטפת בחדר בקרה.</li>
+        <li>תמיכה בממשקי מערכות הארגון.</li>
+        <li>עבודה בחדר בקרה.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <img src="images/ardan.png" alt="ארדן קונטרול טק" style="height:40px;">
+        <img src="images/ardan.png" alt="ארדן קונטרול טק">
         <div class="job-title">אינטגרטור / שירות – ארדן קונטרול טק</div>
       </div>
       <div class="job-meta">2021–2022</div>
-      <ul>
-        <li>קינפוג מצלמות (Milestone), בקרי כניסה.</li>
-        <li>הקמת חוות סולריות, סוויצ׳ים, סיבים.</li>
-      </ul>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <img src="images/magalcom.png" alt="מגלקום" style="height:40px;">
+        <img src="images/magalcom.png" alt="מגלקום">
         <div class="job-title">טכנאי הפעלות – מגלקום</div>
       </div>
       <div class="job-meta">2019–2020</div>
-      <ul>
-        <li>קינפוג מערכות כריזה, קריאת אחות ואינטרקום.</li>
-      </ul>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <img src="images/nice.png" alt="NICE Systems" style="height:40px;">
+        <img src="images/nice.png" alt="NICE Systems">
         <div class="job-title">Senior Customer Support Engineer – Tier 2</div>
       </div>
-      <div class="job-meta">NICE Systems | 2008–2018</div>
-      <ul>
-        <li>תמיכה Tier 2/3, RCA, SQL, עבודה מול R&D.</li>
-      </ul>
+      <div class="job-meta">2008–2018</div>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <img src="images/bezeq.png" alt="בזק בינלאומי" style="height:40px;">
+        <img src="images/bezeq.png" alt="בזק בינלאומי">
         <div class="job-title">תמיכה טכנית – בזק בינלאומי</div>
       </div>
       <div class="job-meta">2004–2005</div>
